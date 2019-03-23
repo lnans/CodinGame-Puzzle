@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CondinGame.Puzzle.Easy.TheDescent
+namespace CodinGame.Puzzle.Easy.TheDescent
 {
     internal class Program
     {
+        // ReSharper disable once UnusedMember.Local
+        // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
             // game loop

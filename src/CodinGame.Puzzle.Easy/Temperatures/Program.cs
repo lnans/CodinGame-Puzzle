@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CondinGame.Puzzle.Easy.Temperatures
+namespace CodinGame.Puzzle.Easy.Temperatures
 {
     internal class Program
     {
+        // ReSharper disable once UnusedMember.Local
+        // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine()); // the number of temperatures to analyse
-            string[] inputs = Console.ReadLine().Split(' '); // all temperatures
+            string[] inputs = Console.ReadLine()?.Split(' '); // all temperatures
 
             List<int> tempsPositive = new List<int>();
             List<int> tempsNegative = new List<int>(); // store absolute value
             for (int i = 0; i < n; i++)
             {
-                int temp = int.Parse(inputs[i]); // a temperature expressed as an integer ranging from -273 to 5526
+                int temp = int.Parse(inputs?[i]); // a temperature expressed as an integer ranging from -273 to 5526
 
                 if (Math.Sign(temp) == -1)
                     tempsNegative.Add(Math.Abs(temp));

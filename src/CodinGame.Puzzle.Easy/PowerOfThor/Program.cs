@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CondinGame.Puzzle.Easy.PowerOfThor
+namespace CodinGame.Puzzle.Easy.PowerOfThor
 {
     public class Program
     {
+        // ReSharper disable once UnusedMember.Local
+        // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
             // Register all direction possibility, based on (x,y) graph of with length of 1
@@ -21,21 +23,21 @@ namespace CondinGame.Puzzle.Easy.PowerOfThor
                 {"W", new KeyValuePair<int, int>(-1, 0)}
             };
 
-            string[] inputs = Console.ReadLine().Split(' ');
-            int lightX = int.Parse(inputs[0]); // the X position of the light of power
-            int lightY = int.Parse(inputs[1]); // the Y position of the light of power
+            string[] inputs = Console.ReadLine()?.Split(' ');
+            int lightX = int.Parse(inputs?[0]); // the X position of the light of power
+            int lightY = int.Parse(inputs?[1]); // the Y position of the light of power
 
             Position lightPos = new Position(lightX, lightY);
 
-            int initialTX = int.Parse(inputs[2]); // Thor's starting X position
-            int initialTY = int.Parse(inputs[3]); // Thor's starting Y position
+            int initialTX = int.Parse(inputs?[2]); // Thor's starting X position
+            int initialTY = int.Parse(inputs?[3]); // Thor's starting Y position
 
             Position thorPos = new Position(initialTX, initialTY);
 
             // game loop
             while (true)
             {
-                int remainingTurns = int.Parse(Console.ReadLine()); // The remaining amount of turns Thor can move. Do not remove this line.
+                int unused = int.Parse(Console.ReadLine()); // The remaining amount of turns Thor can move. Do not remove this line.
                 KeyValuePair<int, int> direction = GetGridPositionTarget(thorPos, lightPos);
                 thorPos = thorPos.Move(compass.First(c => c.Value.Key == direction.Key && c.Value.Value == direction.Value));
             }

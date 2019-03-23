@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace CondinGame.Puzzle.Easy.OnBoarding
+namespace CodinGame.Puzzle.Easy.OnBoarding
 {
     internal class Program
     {
-        static void Main(string[] args)
+        // ReSharper disable once UnusedMember.Global
+        // ReSharper disable once UnusedParameter.Global
+        internal static void Main(string[] args)
         {
-
             // game loop
             while (true)
             {
@@ -20,14 +21,9 @@ namespace CondinGame.Puzzle.Easy.OnBoarding
                 // Enter the code here
 
                 if (dist1 < dist2)
-                {
                     Console.WriteLine(enemy1);
-                }
                 else
-                {
                     Console.WriteLine(enemy2);
-                }
-
             }
         }
     }

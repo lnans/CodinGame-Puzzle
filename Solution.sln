@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CondinGame.Puzzle.Easy", "src\CondinGame.Puzzle.Easy\CondinGame.Puzzle.Easy.csproj", "{0843123E-4BF9-4634-B878-7F207DB11424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodinGame.Puzzle.Easy", "src\CodinGame.Puzzle.Easy\CodinGame.Puzzle.Easy.csproj", "{0843123E-4BF9-4634-B878-7F207DB11424}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodinGame.Optimization", "src\CodinGame.Optimization\CodinGame.Optimization.csproj", "{DA950B73-B552-428C-A979-F9FAAE780AD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0843123E-4BF9-4634-B878-7F207DB11424}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0843123E-4BF9-4634-B878-7F207DB11424}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0843123E-4BF9-4634-B878-7F207DB11424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA950B73-B552-428C-A979-F9FAAE780AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA950B73-B552-428C-A979-F9FAAE780AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA950B73-B552-428C-A979-F9FAAE780AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA950B73-B552-428C-A979-F9FAAE780AD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
